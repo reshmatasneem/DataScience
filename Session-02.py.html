@@ -1,0 +1,302 @@
+
+# coding: utf-8
+
+# ## Data Type
+
+# ### numbers
+
+# In[1]:
+
+
+1 + 5
+
+
+# In[2]:
+
+
+10 / 3
+
+
+# In[3]:
+
+
+11 * 10
+
+
+# In[4]:
+
+
+10 % 2
+
+
+# In[5]:
+
+
+-8 - 2
+
+
+# ### list
+
+# In[7]:
+
+
+my_list = [1,2,3,4,5,1,2,3,4,5]
+
+
+# In[8]:
+
+
+my_list[1:7]
+
+
+# In[9]:
+
+
+my_list[0]
+
+
+# In[10]:
+
+
+my_list[-1]
+
+
+# In[11]:
+
+
+my_list[-5]
+
+
+# In[16]:
+
+
+my_list.append(6)
+
+
+# In[17]:
+
+
+my_list
+
+
+# In[13]:
+
+
+#accassing index 4 to index 9 by providing 4:10
+my_list[4:10]
+
+
+# In[14]:
+
+
+my_list2 = [10,11,12,13,14,15,16]
+
+
+# In[18]:
+
+
+my_list.extend(my_list2)
+
+
+# In[19]:
+
+
+my_list
+
+
+# In[20]:
+
+
+my_list.count(1)
+
+
+# In[21]:
+
+
+my_list[1] = 1
+
+
+# In[22]:
+
+
+my_list
+
+
+# In[23]:
+
+
+my_list.count(1)
+
+
+# #### nested list
+
+# In[24]:
+
+
+my_nest_list = [1, 2, 3, [4, 5, ['target', 'hello']]]
+
+
+# In[25]:
+
+
+my_nest_list[1]
+
+
+# In[26]:
+
+
+my_nest_list[3]
+
+
+# In[27]:
+
+
+my_nest_list[3][0]
+
+
+# In[28]:
+
+
+my_nest_list[3][2]
+
+
+# In[29]:
+
+
+my_nest_list[3][2][0]
+
+
+# In[31]:
+
+
+my_nest_list[3][2][0][2]
+
+
+# In[32]:
+
+
+my_nest_list[3][2][1][-1]
+
+
+# In[38]:
+
+
+my_list3 = ['abc','xyz']
+
+
+# In[39]:
+
+
+my_list3
+
+
+# In[40]:
+
+
+my_nest_list.append(my_list3)
+
+
+# #### Nested tuple
+
+# In[41]:
+
+
+my_nest_tuple = (1,2,3,(4,5,('target','Hello')))
+
+
+# In[42]:
+
+
+my_nest_tuple[2]
+
+
+# In[43]:
+
+
+my_nest_tuple[3][0]
+
+
+# In[45]:
+
+
+my_nest_tuple[3][2]
+
+
+# In[46]:
+
+
+my_nest_tuple[3][2][-1]
+
+
+# In[47]:
+
+
+#immutable
+my_nest_tuple[0] = 10
+
+
+# In[52]:
+
+
+my_set = {10,20,30,40,50,10,20,40,30,50}
+
+
+# In[53]:
+
+
+my_set
+
+
+# In[54]:
+
+
+type(my_set)
+
+
+# In[57]:
+
+
+my_set_list = list(my_set)
+
+
+# In[63]:
+
+
+my_set_list
+
+
+# In[64]:
+
+
+my_set_list[-1] 
+
+
+# In[65]:
+
+
+my_set_list[-1] = 100
+
+
+# In[66]:
+
+
+my_set_list
+
+
+# In[67]:
+
+
+my_set_list_set = set(my_set_list)
+
+
+# In[68]:
+
+
+my_set_list_set
+
+
+# In[70]:
+
+
+type(my_set_list_set)
+
