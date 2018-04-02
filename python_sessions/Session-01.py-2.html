@@ -1,0 +1,440 @@
+
+# coding: utf-8
+
+# In[226]:
+
+
+print("Hello World")
+
+
+# ## DataTypes
+# 
+
+# ### int
+# 
+
+# In[227]:
+
+
+my_int_var = 10
+
+
+# In[228]:
+
+
+print(my_int_var)
+
+
+# In[229]:
+
+
+print(type(my_int_var))
+
+
+# ### float
+
+# In[230]:
+
+
+my_float_var = 15.6
+
+
+# In[231]:
+
+
+print(my_float_var)
+
+
+# In[232]:
+
+
+type(my_float_var)
+
+
+# ### string
+
+# In[233]:
+
+
+my_str_var = "Reshma "
+
+
+# In[234]:
+
+
+print(my_str_var)
+
+
+# In[235]:
+
+
+print(type(my_str_var))
+
+
+# In[236]:
+
+
+my_str_var_2 = "Tasneem"
+
+
+# In[237]:
+
+
+print(my_str_var_2)
+
+
+# In[238]:
+
+
+print(type(my_str_var_2))
+
+
+# ### boolean
+
+# In[239]:
+
+
+a = 10
+
+
+# In[240]:
+
+
+b = 20
+
+
+# In[241]:
+
+
+c = a > b
+
+
+# In[242]:
+
+
+print(c)
+
+
+# In[243]:
+
+
+d = a < b 
+
+
+# In[244]:
+
+
+print(d)
+
+
+# In[245]:
+
+
+print(type(d))
+
+
+# ### list
+# #### in list we can have duplicates, list are muatable , heterogenious data and list has index 
+# #### 0 to n-1 left to right and from (-1 ) is last element from right to left
+
+# In[315]:
+
+
+my_list = [1,2,3,4,1,2,3,4]
+
+
+# In[316]:
+
+
+print(my_list)
+
+
+# In[317]:
+
+
+type(my_list)
+
+
+# In[318]:
+
+
+my_list[0]
+
+
+# In[319]:
+
+
+#right to left element at 3rd psition is 2
+my_list[-3]
+
+
+# In[320]:
+
+
+#range of elements from start-index to end-index+1 ie.,1 to 6  
+my_list[1:6]
+
+
+# In[321]:
+
+
+my_list[0:4]
+
+
+# In[322]:
+
+
+#replace element at index 4 with valure 5 hence list is mutable
+my_list[4] = 5
+
+
+# In[323]:
+
+
+my_list 
+
+
+# In[324]:
+
+
+my_list_2 = ['w','x','y','z']
+
+
+# In[325]:
+
+
+print(my_list_2)
+
+
+# In[326]:
+
+
+my_list_2[0]
+
+
+# In[327]:
+
+
+my_list_2[-1]
+
+
+# In[328]:
+
+
+my_list_2[1]
+
+
+# In[329]:
+
+
+my_list_3 = ['a','b','c','d','e']
+
+
+# In[330]:
+
+
+print(my_list_3)
+
+
+# In[331]:
+
+
+#adding element at end of list
+my_list_3.append('f')
+
+
+# In[332]:
+
+
+print(my_list_3)
+
+
+# In[333]:
+
+
+#concatniate 2 list
+my_list_3.extend(my_list_2)
+
+
+# In[334]:
+
+
+print(my_list_3)
+
+
+# In[338]:
+
+
+#replace w with f
+my_list_3[6] = 'f'
+
+
+# In[339]:
+
+
+my_list_3
+
+
+# ### tuple
+# #### same as list but we cannot append elements to a tuple once its created it si immutable , heterogenious data, and it also has indexing 
+
+# In[265]:
+
+
+my_tuple = (1,2,3,4,5,6)
+
+
+# In[266]:
+
+
+my_tuple[0:5]
+
+
+# In[267]:
+
+
+print(my_tuple)
+
+
+# In[268]:
+
+
+print(type(my_tuple))
+
+
+# In[288]:
+
+
+my_tuple_2 = ('a', 'b', 'c', 'd', 'a', 'b', 'c', 'd')
+
+
+# In[289]:
+
+
+print(my_tuple_2)
+
+
+# In[291]:
+
+
+my_tuple_2[5]
+
+
+# In[294]:
+
+
+#tuple is immutable
+my_tuple_2[5] = 'e'
+
+
+# In[345]:
+
+
+#if you want to change tuple data value 
+#you can change tuple to list and change the data value
+#and the make it tuple again
+
+
+# In[340]:
+
+
+my_tuple_2_list = list(my_tuple_2)
+
+
+# In[341]:
+
+
+my_tuple_2_list
+
+
+# In[343]:
+
+
+my_tuple_2_list[5] = 'e'
+
+
+# In[344]:
+
+
+my_tuple_2_list
+
+
+# In[346]:
+
+
+my_tuple_2 = tuple(my_tuple_2_list) 
+
+
+# In[347]:
+
+
+my_tuple_2
+
+
+# ### set
+# #### set accepts heterogenious data , mutable(changeable), do not have indexing and do not accept duplicates
+
+# In[275]:
+
+
+my_set = {1,2,3,4,1,2,3,1,2.0}
+
+
+# In[276]:
+
+
+type(my_set)
+
+
+# In[352]:
+
+
+#NO duplicates
+print(my_set)
+
+
+# In[278]:
+
+
+#list allows duplicates
+my_list_5 =[1,2,3,4,1,2,3,1]
+
+
+# In[279]:
+
+
+print(my_list_5)
+
+
+# In[349]:
+
+
+#we can add elements to set hence it is mutable
+my_set.add(10)
+
+
+# In[348]:
+
+
+print(my_set)
+
+
+# In[351]:
+
+
+#no index in set
+my_set[2]
+
+
+# In[353]:
+
+
+my_set.add('a')
+
+
+# In[356]:
+
+
+#set allows heterogenious data value 
+my_set
+
