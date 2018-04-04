@@ -1,0 +1,24 @@
+
+python_leaining_01 - 
+examples of list,set,tuple 
+implementing all methods in them 
+
+python_learnng_02 -
+exapmes of string 
+implementing methods in str
+
+python_learn_03 -
+type casting of list to set, tuple
+                 set to list, tuple
+                tuple to set, list
+    
+python_learning_04 -
+dictionary examples 
+dict all methods
+list ,set, tuple to dict 
+    
+python_learning_05 -
+if,else,elif and for loop 
+input()
+range()
+in ,  not used in if ondition 
